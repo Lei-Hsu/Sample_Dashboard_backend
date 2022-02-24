@@ -37,7 +37,7 @@ const singIn = asyncHandler(async (req: Request, res: Response) => {
     })
 
     if (userData) {
-      res.status(400).json({
+      res.status(201).json({
         status: 'success',
         data: userData
       })
